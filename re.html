@@ -1,0 +1,13 @@
+<input type="color" id="colorPicker">
+<textarea id="textArea"></textarea>
+
+<script>
+    const colorPicker = document.getElementById('colorPicker');
+    const textArea = document.getElementById('textArea');
+
+    colorPicker.addEventListener('input', function () {
+        const selectedColor = colorPicker.value;
+        textArea.style.color = selectedColor;
+    });
+
+</script>
